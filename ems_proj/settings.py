@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'events',
-    'crispy_forms'
+    'crispy_forms',
+    'users'
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+AUTH_USER_MODEL = 'users.Participant'
